@@ -54,6 +54,10 @@ call plug#end()
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" comm
+set number
+set encoding=utf-8
+
 " colorscheme
 set background=dark " require
 colorscheme onedark
