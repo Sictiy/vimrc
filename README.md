@@ -8,7 +8,7 @@
 ```shell
 yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
 git clone https://github.com/vim/vim.git
-./configure --with-features=huge --enable-multibyte --enable-rubyinterp=yes --enable-pythoninterp=yes --enable-python3interp=yes --prefix=/usr/local/vim8
+./configure --with-features=huge --enable-multibyte --enable-rubyinterp=yes --enable-pythoninterp=yes --with-python-config-dir=/usr/lib64/python2.7/config/ --enable-python3interp=yes --prefix=/usr/local/vim8
 make && make install
 mv /usr/bin/vim /usr/bin/vim.bak
 ln -s /usr/local/vim8/bin/vim /usr/bin/vim
