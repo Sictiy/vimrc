@@ -3,6 +3,8 @@
 " Sictiy 2018/04
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+source $VIMRUNTIME/vimrc_example.vim
+
 " vim-plug
 call plug#begin('~/.vim/plugged')
 
@@ -43,7 +45,7 @@ Plug 'hkupty/iron.nvim'
 
 " Cpp
 Plug 'vim-scripts/a.vim', { 'for': 'cpp' }
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe',{'do': './install.py --clang-completer', 'for': 'cpp'}
 
 " Python
 " Plug 'klen/python-mode', { 'for': 'python' }
@@ -67,7 +69,7 @@ set lazyredraw
 set scrolloff=3 " Minimum lines to keep above and below cursor
 
 " shell and terminal
-set shell=/bin/fish
+set shell=/bin/bash
 autocmd BufWinEnter,WinEnter term://* startinsert
 set splitbelow
 set splitright
