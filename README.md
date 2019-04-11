@@ -48,3 +48,5 @@ ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
 - 启动vim崩溃
   - 一般是plug出错
   - 重新编译youCompleteMe
+- 手动编译ycm
+  - ./install.py --clang-completer --go-completer --java-completer
