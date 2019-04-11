@@ -2,8 +2,6 @@
 
 ## required
 
----
-
 - vim8 or neovim
 ```shell
 yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
@@ -26,8 +24,6 @@ ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
 ```
 
 ## config
-
----
 
 - git clone ...
 - ./setup.sh
