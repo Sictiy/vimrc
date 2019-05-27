@@ -2,13 +2,11 @@
 
 ## required
 
----
-
 - vim8 or neovim
 ```shell
 yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
 git clone https://github.com/vim/vim.git
-./configure --with-features=huge --enable-multibyte --enable-rubyinterp=yes --enable-pythoninterp=yes --enable-python3interp=yes --prefix=/usr/local/vim8
+./configure --with-features=huge --enable-multibyte --enable-rubyinterp=yes --enable-pythoninterp=yes --with-python-config-dir=/usr/lib64/python2.7/config/ --enable-python3interp=yes --prefix=/usr/local/vim8
 make && make install
 mv /usr/bin/vim /usr/bin/vim.bak
 ln -s /usr/local/vim8/bin/vim /usr/bin/vim
@@ -26,8 +24,6 @@ ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
 ```
 
 ## config
-
----
 
 - git clone ...
 - ./setup.sh
@@ -48,3 +44,5 @@ ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
 - 启动vim崩溃
   - 一般是plug出错
   - 重新编译youCompleteMe
+- 手动编译ycm
+  - ./install.py --clang-completer --go-completer --java-completer
