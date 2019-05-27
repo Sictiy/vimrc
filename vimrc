@@ -45,7 +45,7 @@ Plug 'hkupty/iron.nvim'
 
 " Cpp
 Plug 'vim-scripts/a.vim', { 'for': 'cpp' }
-Plug 'Valloric/YouCompleteMe',{'do': './install.py --clang-completer', 'for': 'cpp'}
+Plug 'Valloric/YouCompleteMe',{'do': './install.py --clang-completer --go-completer java-completer', 'for': ['cpp','java','go']}
 
 " Python
 " Plug 'klen/python-mode', { 'for': 'python' }
