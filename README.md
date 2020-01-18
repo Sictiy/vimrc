@@ -14,13 +14,20 @@ ln -s /usr/local/vim8/bin/vim /usr/bin/vim
 ```
 - python3
 ```shell
+## 废弃
 wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
 tar -zxvf Python-3.6.8
 ./configure prefix=/usr/local/python3 --enable-shared
 make && make install
 ln -s /usr/local/python3/bin/python3 /usr/bin/python3
 ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
-
+## 改用直接通过软件源安装
+yum install epel-release -y
+yum install https://centos7.iuscommunity.org/ius-release.rpm -y
+yum install python3
+yum install python3-devel
+## python2.7 可能同样没有添加到vim的支持里需要安装devel
+yum install python-devel
 ```
 
 ## config
